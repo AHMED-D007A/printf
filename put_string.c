@@ -10,7 +10,7 @@ int _putstring(char *str)
 	int i = 0;
 
 	while (*str)
-		i += pchar(*str++);
+		i += _putchar(*str++);
 
 	return (i);
 }
