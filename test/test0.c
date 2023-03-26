@@ -7,6 +7,7 @@
 int main(void)
 {
 	int r;
+
 	r = _printf("1) The first character of my name is %c\n", 'A');
 	printf("the length is: %d\n", r);
 	r = _printf("2) My name is %s\n", "Ahmed");

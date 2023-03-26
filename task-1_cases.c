@@ -27,5 +27,5 @@ int case_num(va_list ap)
 	info[i] = '\0';
 
 	str_rev(info + sign, i - sign - 1);
-	return _putstring(info);
+	return (_putstring(info));
 }
