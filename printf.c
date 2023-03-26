@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	format_s formats[] = {
 	{ 'c', case_c }, { 's', case_s }, { '%', case_mod },
 	{ 'i', case_num }, { 'd', case_num },
-	{ 0, NULL },
+	{ 'd', case_binary }, { 0, NULL },
 	};
 
 	va_start(ap, format);
