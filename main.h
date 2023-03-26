@@ -11,7 +11,12 @@ void str_rev(char *str, int len);
 
 /* type definitions :) */
 typedef int (*format_f)(va_list);
-typedef struct
+/**
+ * struct format - structer denfinetion of the format.
+ * @fcase: the cases of the format
+ * @fun: the pointed function that point to the function case.
+*/
+typedef struct format
 {
 	char fcase;
 	format_f fun;
