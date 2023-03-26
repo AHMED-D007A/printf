@@ -1,11 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdarg.h>
-/**
- * format_f - a pointer function that point to the function case.
- * @va_list: the pointer that point to the list.
-*/
-typedef int (*format_f)(va_list);
 /**
  * _printf - a clone sample that work like printf.
  * @format: reference to the formating of the string.
@@ -20,7 +13,6 @@ int _printf(const char *format, ...)
 	format_s formats[] = {
 	{ 'c', case_c }, { 's', case_s }, { '%', case_mod },
 	{ 'i', case_num }, { 'd', case_num },
-	{ 0, NULL },
 	};
 
 	va_start(ap, format);

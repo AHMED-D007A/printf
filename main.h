@@ -1,28 +1,26 @@
-#ifndef MAIN_H
-#define MAIN_H
-#include <stdio.h>
-#include <unistd.h>
+#ifndef _MAIN_H_
+#define _MAIN_H_
+
 #include <stdarg.h>
-#include <stdlib.h>
-/* type defenitoin */
+
+/* main functions :) */
+int _printf(const char *format, ...);
+int _putchar(const char c);
+int _putstring(const char *str);
+void str_rev(char *str, int len);
+
+/* type definitions :) */
 typedef int (*format_f)(va_list);
-/**
- * struct format - structer denfinetion of the format.
- * @fcase: the cases of the format
- * @fun: the pointed function that point to the function case.
-*/
-typedef struct format
+typedef struct
 {
 	char fcase;
 	format_f fun;
 } format_s;
-typedef int (*format_f)(va_list);
-int _putchar(char c);
-void str_rev(char *str, int len);
-int _putstring(char *str);
+
+/* format the functions */
 int case_c(va_list ap);
 int case_s(va_list ap);
-int case_mod(va_list ap __attribute__((unused)));
+int case_mod(va_list ap);
 int case_num(va_list ap);
-int _printf(const char *format, ...);
+
 #endif

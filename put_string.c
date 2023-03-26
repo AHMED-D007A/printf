@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _putstring - print a string to stdo.
  * @str: the string.
  * Return: the number of charaters in the string.
 */
-int _putstring(char *str)
+int _putstring(const char *str)
 {
 	int i = 0;
 

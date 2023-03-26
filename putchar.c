@@ -5,7 +5,7 @@
  * @c: the given charater.
  * Return: the charater.
 */
-int _putchar(char c)
+int _putchar(const char c)
 {
 	return (write(1, &c, 1) > 0 ? 1 : 0);
 }
