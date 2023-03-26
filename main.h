@@ -23,5 +23,6 @@ int put_string(char *str);
 int case_c(va_list ap);
 int case_s(va_list ap);
 int case_mod(va_list ap __attribute__((unused)));
+int case_num(va_list ap);
 int _printf(const char *format, ...);
 #endif
