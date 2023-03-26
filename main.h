@@ -18,8 +18,8 @@ typedef struct format
 } format_s;
 typedef int (*format_f)(va_list);
 int _putchar(char c);
-void string_rev(char *str, int len);
-int put_string(char *str);
+void str_rev(char *str, int len);
+int _putstring(char *str);
 int case_c(va_list ap);
 int case_s(va_list ap);
 int case_mod(va_list ap __attribute__((unused)));

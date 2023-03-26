@@ -29,7 +29,7 @@ int case_num(va_list ap) {
      * reverse the parsed characters
      * because the code parsed the digits in reverse order
      */
-    string_rev(info + sign, i - sign - 1);
-    return put_string(info);
+    str_rev(info + sign, i - sign - 1);
+    return _putstring(info);
 }
 

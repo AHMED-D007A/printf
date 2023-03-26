@@ -19,9 +19,9 @@ int case_s(va_list ap)
 	char *str = va_arg(ap, char *);
 
 	if (!str)
-		return (put_string("(null)"));
+		return (_putstring("(null)"));
 
-	return (put_string(str));
+	return (_putstring(str));
 }
 /**
  * case_mod - handle the modules format.
