@@ -7,7 +7,7 @@
 */
 int case_c(va_list ap)
 {
-	return _putchar(va_arg(ap, int));
+	return (_putchar(va_arg(ap, int)));
 }
 /**
  * case_s - handle the string format.
@@ -19,9 +19,9 @@ int case_s(va_list ap)
 	char *str = va_arg(ap, char *);
 
 	if (!str)
-		return put_string("(null)");
+		return (put_string("(null)"));
 
-	return put_string(str);
+	return (put_string(str));
 }
 /**
  * case_mod - handle the modules format.
@@ -30,5 +30,5 @@ int case_s(va_list ap)
 */
 int case_mod(va_list ap __attribute__((unused)))
 {
-	return _putchar('%');
+	return (_putchar('%'));
 }

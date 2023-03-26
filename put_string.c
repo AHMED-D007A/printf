@@ -12,5 +12,5 @@ int _putstring(char *str)
 	while (*str)
 		i += pchar(*str++);
 
-	return i;
+	return (i);
 }
