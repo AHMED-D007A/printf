@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <stdarg.h>
 #include <stdlib.h>
+/* type defenitoin */
+typedef int (*format_f)(va_list);
 /**
  * struct format - structer denfinetion of the format.
  * @fcase: the cases of the format

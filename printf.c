@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 		/* print ordinary characters */
 		if (*format != '%')
 		{
-			pchar(*format);
+			_putchar(*format);
 			counter++;
 			continue;
 		}
