@@ -26,7 +26,8 @@ int _printf(const char *format, ...)
 			counter++;
 			continue;
 		}
-
+		_putchar(*format);
+		counter++;
 		format++;
 		/* print formats */
 		for (i = 0; formats[i].fcase; i++)
